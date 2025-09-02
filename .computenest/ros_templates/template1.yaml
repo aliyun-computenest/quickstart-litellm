@@ -194,8 +194,8 @@ Parameters:
   UI_USERNAME:
     Type: String
     Label:
-      zh-cn: UI USERNAME
-      en: LiteLLM服务登录用户名
+      en: UI USERNAME
+      zh-cn: LiteLLM服务登录用户名
     Default: admin
   UI_PASSWORD:
     NoEcho: true
@@ -305,8 +305,8 @@ Resources:
 
             docker compose down
 
-            echo "UI_USERNAME = ${UI_USERNAME}" /root/litellm/.env
-            echo "UI_PASSWORD = ${UI_PASSWORD}" /root/litellm/.env
+            echo "UI_USERNAME = ${UI_USERNAME}" >> /root/litellm/.env
+            echo "UI_PASSWORD = ${UI_PASSWORD}" >> /root/litellm/.env
 
             docker compose up -d
 
@@ -330,7 +330,7 @@ Outputs:
               - 0
               - Fn::GetAtt:
                   - InstanceGroup
-                  - PrivateIps
+                  - PublicIps
 Metadata:
   ALIYUN::ROS::Interface:
     ParameterGroups:
