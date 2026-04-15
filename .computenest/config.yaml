@@ -7,7 +7,7 @@ Service:
       ArtifactRelation:
         centos_7:
           ArtifactId: ${Artifact.EcsImage.ArtifactId}
-          ArtifactVersion: ${Artifact.EcsImage.ArtifactVersion}
+          ArtifactVersion: draft
     TemplateConfigs:
       - Name: 新建ECS实例
         Url: 'ros_templates/template1.yaml'
