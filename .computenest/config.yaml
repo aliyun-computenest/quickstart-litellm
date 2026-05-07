@@ -11,6 +11,8 @@ Service:
     TemplateConfigs:
       - Name: 新建ECS实例
         Url: 'ros_templates/template1.yaml'
+        AllowedRegions:
+          - ap-southeast-1
   ServiceType: private
   ServiceInfo:
     Locale: zh-CN
