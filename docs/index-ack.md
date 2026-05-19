@@ -1,5 +1,3 @@
-# LiteLLM社区版ACK版部署
-
 ## 概述
 通过 LiteLLM 可以使用 OpenAI 格式调用所有 LLM API [Bedrock、Huggingface、VertexAI、TogetherAI、Azure、OpenAI、Groq 等]。 访问[LiteLLM官网](https://www.litellm.ai/)了解更多详情。
 
